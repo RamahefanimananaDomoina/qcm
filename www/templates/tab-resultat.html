@@ -1,0 +1,161 @@
+<ion-view view-title="Résultat" xmlns="http://www.w3.org/1999/html">
+  <ion-content class="padding">
+
+
+
+    <!-- MetisMenu CSS -->
+    <link href="me/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="me/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="me/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="me/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="me/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <div class="col-md-offset-2 col-md-7">
+      <!--<div class="col-md-12">-->
+        <!--<div class="col-md-8">-->
+          <div id="note">
+            <div class="alert alert-danger alert-dismissable" ng-if="reponseVrai < tailleQuestion / 2">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Attention {{firstName}}!
+              Vous êtes au-dessous de la moyenne <a href="#" class="fa fa-thumbs-o-down"></a>.
+
+            </div>
+            <div ng-if="reponseVrai >= tailleQuestion / 2">
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Félicitation
+                {{firstName}}
+                <i class="fa fa-smile-o" aria-hidden="true"></i>, Vous avez eu la moyenne &nbsp;
+                <a href="#" class="alert-link"><i class="fa fa-thumbs-o-up"></i></a>.
+              </div>
+            </div>
+            <h3 class="title">Votre note est : {{reponseVrai}} / {{tailleQuestion}} </h3>
+            <div class="form-group" id="input2">
+
+            </div>
+          </div>
+        <!--</div>-->
+        <!--<div class="col-md-4">-->
+          <div id="piechart_3d" style="width: 450px; height: 200px;"></div>
+        <!--</div>-->
+      <!--</div>-->
+    </div>
+
+    <!--<div class="col-md-12">-->
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="panel panel-green">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-check fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge">{{reponseVrai}}</div>
+                <div>Bonnes réponses</div>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <div class="panel-footer">
+              <span class="pull-left"> Détails</span>
+              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+              <div class="clearfix"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="panel panel-red">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-close fa-5x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge">{{reponseFaux}}</div>
+                <div>Mauvaises réponses</div>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <div class="panel-footer">
+              <span class="pull-left"> Détails</span>
+              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+              <div class="clearfix"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="panel panel-yellow">
+          <div class="panel-heading">
+            <div class="row">
+              <div class="col-xs-3">
+                <i class="fa fa-minus fa-4x"></i>
+              </div>
+              <div class="col-xs-9 text-right">
+                <div class="huge">2</div>
+                <div>Non répondues</div>
+              </div>
+            </div>
+          </div>
+          <a href="#">
+            <div class="panel-footer">
+              <span class="pull-left"> Détails</span>
+              <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
+              <div class="clearfix"></div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12">
+      <!--<div class="row">
+      </div>-->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <i class="fa fa-bell fa-fw"></i> Classements
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+          <div class="list-group">
+
+            <div ng-repeat="result in allFriend">
+
+              <div class='friend'>
+                <img src='{{result.picture.data.url}}' class="img-circle" />
+                <h1><a href="#" ng-bind="result.name">{{result.name}}</a></h1>
+                <p>Score 26</p>
+                <a href="#" class='prp max'></a>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.panel-body -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="btn btn-primary " id="doShare"><i class="fa fa-share-alt" aria-hidden="true"></i>&nbsp;Partager</div>
+      <div id="fb-root"></div>
+
+
+      <button id="doInvite" class="btn btn-success btn-xs" style="margin-left: 2%"><i class="glyphicon glyphicon-envelope"></i>&nbsp;Inviter des amis</button>
+
+    </div>
+
+  </ion-content>
+
+  <script src="js/jsapi.js"></script>
+
+</ion-view>

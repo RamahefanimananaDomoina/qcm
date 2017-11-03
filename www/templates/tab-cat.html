@@ -1,0 +1,55 @@
+<ion-view view-title="QCM" xmlns="http://www.w3.org/1999/html">
+  <ion-content class="padding">
+    <!-- Bootstrap Core CSS -->
+    <link href="me/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="me/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="me/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="me/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="me/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <link href="me/bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <div class="col-sm-2 sidenav padding">
+
+    </div>
+    <div class="col-sm-7">
+      <div class="thumbnail ">
+        <div class="caption">
+          <div class="alert alert-success alert-dismissable">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button> Bonjour
+            <a href="#" class="alert-link">{{firstName}}</a>
+          </div>
+
+
+        </div>
+        <img src="{{image}}" class="img-circle"><a style="margin-left: 15%">{{name}}</a>
+        <i style="margin-left: 30%" class="fa fa-users" aria-hidden="true">&nbsp; Amis:<span class="badge">{{friendsCount}}</span></i>
+      </div>
+      <form class="list" ng-submit="getCategorie(categorie)">
+        <select id="select" class="form-control" ng-model="categorie" ng-options="cat.value for cat in allCategories" ng-change="onSelectCategoryChange(categorie)">
+            </select>
+        <button class="button button-block button-positive">Envoyer</button> {{ ids }}
+      </form>
+    </div>
+
+    <div class="col-sm-2">
+
+    </div>
+
+
+
+    <button class="button button-positive button-fab button-fab-bottom-right" id="doLogout">
+        <i class="icon ion-log-out"></i>
+      </button>
+
+  </ion-content>
+
+</ion-view>

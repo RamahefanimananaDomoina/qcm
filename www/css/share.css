@@ -1,0 +1,119 @@
+element.style {
+}
+share_button.ph…nect%2Fxd_a…:3
+._2tga._3e2a {
+    font-size: 13px;
+    height: 28px;
+    padding: 0 4px 0 6px;
+    padding-top: 0px;
+    padding-right: 4px;
+    padding-bottom: 0px;
+    padding-left: 6px;
+}
+share_button.ph…nect%2Fxd_a…:3
+.pluginFontHelvetica, .pluginFontHelvetica button, .pluginFontHelvetica input, .pluginFontHelvetica label, .pluginFontHelvetica select, .pluginFontHelvetica td, .pluginFontHelvetica textarea {
+    font-family: Helvetica, Arial, sans-serif;
+}
+share_button.ph…nect%2Fxd_a…:3
+.plugin, .plugin button, .plugin input, .plugin label, .plugin select, .plugin td, .plugin textarea {
+    font-size: 11px;
+}
+share_button.ph…nect%2Fxd_a…:3
+.inlineBlock {
+    display: inline-block;
+    zoom: 1;
+}
+share_button.ph…nect%2Fxd_a…:3
+._2tga {
+    background: #4267b2;
+    border: 1px solid #4267b2;
+    color: #fff;
+    cursor: pointer;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    -webkit-user-select: none;
+    white-space: nowrap;
+}
+share_button.ph…nect%2Fxd_a…:3
+button {
+    margin: 0;
+}
+share_button.ph…nect%2Fxd_a…:3
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    padding: 1px 6px;
+}
+user agent stylesheet
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+    align-items: flex-start;
+    text-align: center;
+    cursor: default;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+}
+user agent stylesheet
+input, textarea, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em;
+    font: 13.3333px Arial;
+}
+user agent stylesheet
+input, textarea, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+user agent stylesheet
+button {
+    -webkit-appearance: button;
+}
+Inherited from div.pluginSkinLight.pluginFontHelvetica
+share_button.ph…nect%2Fxd_a…:3
+.pluginFontHelvetica, .pluginFontHelvetica button, .pluginFontHelvetica input, .pluginFontHelvetica label, .pluginFontHelvetica select, .pluginFontHelvetica td, .pluginFontHelvetica textarea {
+    font-family: Helvetica, Arial, sans-serif;
+}
+Inherited from body.plugin.chrome.webkit.x1.Locale_fr_FR
+share_button.ph…nect%2Fxd_a…:3
+body.plugin {
+    background: transparent;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.28;
+    overflow: hidden;
+    -webkit-text-size-adjust: none;
+}
+share_button.ph…nect%2Fxd_a…:3
+.plugin, .plugin button, .plugin input, .plugin label, .plugin select, .plugin td, .plugin textarea {
+    font-size: 11px;
+}
+share_button.ph…nect%2Fxd_a…:3
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+share_button.ph…nect%2Fxd_a…:3
+body {
+    background: #fff;
+    color: #1d2129;
+    direction: ltr;
+    line-height: 1.34;
+    margin: 0;
+    padding: 0;
+    unicode-bidi: embed;
+}

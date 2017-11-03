@@ -1,0 +1,84 @@
+<ion-view view-title="Connection QCM">
+  <ion-content>
+    <!--<div class='list'>
+          <label class='item item-input'>
+            <input type='text' ng-model='userName' placeholder="Nom d'utilisateur">
+          </label>
+          <label class='item item-input'>
+            <input type='password' ng-model='password' placeholder='Mot de passe'>
+          </label>
+          <button class="button button-block button-positive" ui-sref="tab.cat">Se connecter</button>
+      </div>-->
+
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Stint+Ultra+Condensed' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="me/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="me/bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="me/dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="me/dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="me/bower_components/morrisjs/morris.css" rel="stylesheet">
+
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport' />
+
+    <div class="col-sm-3 sidenav padding">
+       
+    </div>
+    <div class="col-sm-7">
+      <div class="padding">
+      <ul class="timeline">
+        <li>
+          <div class="timeline-badge primary" id="doLogin"><i class="icon ion-social-facebook"></i>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">Si vous n'êtes pas membre</h4>
+            </div>
+            <div class="timeline-body">
+              <p>Connectez-vous à votre compte facebook pour faire le quiz</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div>
+
+        <div class="headit">
+          <h>Connectez-vous ici ou </h><a href="#">s'inscrire maintenant</a>
+        </div>
+        <form ng-submit="doLogin()">
+          <div class="input-group margin-bottom-sm">
+            <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+            <input class="form-control" type="text" placeholder="Email address" id="email" name="email">
+          </div>
+          <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+            <input class="form-control" type="password" placeholder="Password" id="password" name="password">
+          </div>
+          <button class="button button-block button-positive" id="quickstart-sign-in" name="signin">Se Connecter</button>
+        </form>
+      </div>
+      
+      <div id="loading">
+
+      </div>
+      
+    </div>
+    </div>
+    <div class="col-sm-2" >
+
+    </div>
+    
+    <!-- end left side -->
+  </ion-content>
+</ion-view>
