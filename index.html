@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <title>Slick Sliders</title>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css" />
+  <link rel="stylesheet" type="text/css" href="slick/css/slick.css" />
+</head>
+
+<body>
+  <section class="main-slider">
+
+    <!-- Image section -->
+    <div class="item image">
+      <span class="loading">Loading...</span>
+      <figure>
+        <div class="slide-image slide-media"
+          style="background-image:url('http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRkY4S0JDTk1BbE0');">
+          <img data-lazy="http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLRkY4S0JDTk1BbE0"
+            class="image-entity" />
+        </div>
+        <figcaption class="caption">Static Image</figcaption>
+      </figure>
+    </div>
+    <!-- End Image section -->
+
+    <!-- Video type vimeo section http://player.vimeo.com/video/217885864?&background=1&loop=0&autoplay=1&rel=0&id=217885864  -->
+    <div class="item vimeo" data-video-start="65">
+      <iframe class="embed-player slide-media" controls id="player"
+        src="https://player.vimeo.com/video/230521790?&background=1&loop=0&autoplay=1" width="980"
+        height="520" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <p class="caption">Vimeo</p>
+    </div>
+    <!-- End Video type vimeo section  -->
+
+    <!-- Video type mp4 section  -->
+    <div class="item video">
+      <video class="slide-video slide-media" loop muted preload="metadata" controls id="myVideo"
+        poster="http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSXZCakVGZWhOV00">
+        <source
+          src="http://player.vimeo.com/external/138504815.sd.mp4?s=8a71ff38f08ec81efe50d35915afd426765a7526&profile_id=112"
+          type="video/mp4" />
+      </video>
+      <p class="caption">HTML 5 Video</p>
+    </div>
+    <!-- End  Video type mp4 section  -->
+
+    <!-- Image section  -->
+    <div class="item image">
+      <figure>
+        <div class="slide-image slide-media"
+          style="background-image:url('http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM');">
+          <img data-lazy="http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLNXBIcEdOUFVIWmM"
+            class="image-entity" />
+        </div>
+        <figcaption class="caption">Static Image</figcaption>
+      </figure>
+    </div>
+    <!-- End Image section  -->
+
+    <!-- Video type youtube section http://www.youtube.com/embed/QV5EXOFcdrQ  -->
+    <div class="item youtube">
+      <iframe class="embed-player slide-media" id="ytplayer" width="980" height="520" data-video-start="1"
+        src="http://www.youtube.com/embed/-F86lhnnD74?controls=1&enablejsapi=1&mute=1" frameborder="0"
+        allowfullscreen></iframe>
+      <p class="caption">YouTube</p>
+
+    </div>
+    <!-- End  Video type youtube section  -->
+
+    <!-- Image section  -->
+    <div class="item image">
+      <figure>
+        <div class="slide-image slide-media"
+          style="background-image:url('http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ');">
+          <img data-lazy="http://drive.google.com/uc?export=view&id=0B_koKn2rKOkLSlBkWDBsWXJNazQ"
+            class="image-entity" />
+        </div>
+        <figcaption class="caption">Static Image</figcaption>
+      </figure>
+    </div>
+    <!-- End Image section  -->
+  </section>
+
+  <script type="text/javascript" src="slick/js/cdn/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="https://player.vimeo.com/api/player.js"></script>
+  <script src="slick/js/player/iframe_api.js"></script>
+  <script type="text/javascript" src="slick/js/slick.js"></script>
+</body>
+
+</html>
